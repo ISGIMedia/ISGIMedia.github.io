@@ -1,0 +1,113 @@
+body {
+    background-image: url("Party Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+p, h1, h2, h3, h4, h5 {
+    color: white;
+}
+
+.badge {
+    height: 10vh;
+    width: auto;
+    position: absolute;
+}
+
+/* Logo */
+.logo {
+    left: 4vh;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+
+    margin-top: 4vh;
+    top: 4vh;
+    margin-right: 4vh;
+}
+
+.menu-container > * {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.menu {
+    align-content:center;
+}
+
+.menu-text {
+    align-content: center;
+    right: 15vh;
+    font-size: 2vh;
+}
+
+.appearing-text {
+    position: absolute;
+    height: 10vh;
+    font-weight: bold;
+    text-align: start;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu:hover + .menu-text, .contact:hover + .contact-text{
+    opacity: 1;
+}
+
+.socials {
+    left: 4vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.socials * {
+    height: 7vh;
+    margin-right: 30px;
+}
+
+.contact {
+    align-content:center;
+    right: 4vh;
+}
+
+.contact-container {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    bottom: 4vh;
+}
+
+.contact-text {
+    align-content: center;
+    right: 15vh;
+    font-size: 2vh;
+}
+
+.center-text {
+    margin-top: 45vh;
+    margin-left: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-img {
+    position: fixed;
+    width: fit-content;
+    min-width: 50vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

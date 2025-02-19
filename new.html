@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPSPS</title>
+
+    <style>
+        /* Global Styles */
+        body {
+            background-image: url("Party Background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Logo */
+        .logo {
+            height: 10vh;
+            position: absolute;
+            top: 4vh;
+            left: 4vh;
+        }
+
+        /* Menu Styles */
+        .menu {
+            height: 10vh;
+            position: absolute;
+            top: 4vh;
+            right: 4vh;
+        }
+
+        .menu-text {
+            position: absolute;
+            top: 4vh;
+            right: 15vh;
+            height: 10vh;
+            font-weight: bold;
+            text-align: end;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .menu:hover + .menu-text {
+            opacity: 1;
+        }
+
+        /* Contact Styles */
+        .contact {
+            height: 10vh;
+            position: absolute;
+            bottom: 4vh;
+            right: 4vh;
+        }
+
+        .contact-text {
+            position: absolute;
+            bottom: 4vh;
+            right: 15vh;
+            height: 10vh;
+            font-weight: bold;
+            text-align: end;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact:hover + .contact-text {
+            opacity: 1;
+        }
+
+        /* Center Text */
+        .center-text {
+            font-family: Impact, sans-serif;
+            font-size: 10vh;
+            text-align: center;
+            margin-top: 45vh;
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <img src="logo.jpg" class="logo" alt="Logo">
+
+    <!-- Menu -->
+    <img src="menu.png" class="menu" alt="Menu">
+    <p class="menu-text">Предстоящи събития</p>
+
+    <!-- Contact -->
+    <img src="Contact.png" class="contact" alt="Contact">
+    <p class="contact-text">За повече информация , последвай линка</p>
+
+    <button class="button menu">Предстоящи събития</button>
+    <button class="button contact">За повече информация , последвай линка</button>
+
+    <div class="screen-center">
+
+    </div>
+
+    <!-- Center text -->
+    <p class="center-text">ISGI MEDIA</p>
+</body>
+</html>
