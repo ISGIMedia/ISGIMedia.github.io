@@ -41,6 +41,7 @@ p, h1, h2, h3, h4, h5 {
 
 .menu {
     align-content:center;
+    right: 4vh;
 }
 
 .menu-text {
@@ -81,7 +82,7 @@ p, h1, h2, h3, h4, h5 {
 
 .contact-container {
     position: absolute;
-    display: flex;
+    display: flexbox;
     justify-content: flex-end;
     align-items: center;
     height: 10vh;
@@ -106,7 +107,7 @@ p, h1, h2, h3, h4, h5 {
 .center-img {
     position: fixed;
     width: fit-content;
-    min-width: 50vw;
+    max-width: 100vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
